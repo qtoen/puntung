@@ -51,7 +51,7 @@ while True:
                         if msg.toType == 2:
                             client.sendChatChecked(receiver, msg_id)
                             contact = client.getContact(sender)
-                            if text.lower() == 'me':
+                            if text.lower() == 'aku':
                                 client.sendMessage(receiver, None, contentMetadata={'mid': sender}, contentType=13)
                                 client.tag(receiver, sender)
                             elif 'lc ' in text.lower():
